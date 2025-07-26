@@ -2,43 +2,95 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
 
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="HTML Templates" name="keywords">
-    <meta content="HTML Templates" name="description">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Media Tech Co." />
+<meta name="csrf-token" content="uluVTGv93sLcssUm80hd0MpF5g9ILG23fVyrnBQ5" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
+<!-- Title -->
+<title>ميديا تك</title>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="Set Private Limited" />
-    <meta name="csrf-token" content="uluVTGv93sLcssUm80hd0MpF5g9ILG23fVyrnBQ5" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- OG Title -->
+<meta property="og:title" content="شركة ميديا تك - حلول تقنية متكاملة" />
 
-    <!-- Title-->
-    <title> Media Brand </title>
+<?php
+$lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+?>
 
-    <!-- keywords-->
-    <meta name="description" content="Media Brand, Egypt DM, Egypt Day Tours, Egypt Sightseeing Tours" />
-    <meta name="keywords" content="Media Brand, We are passionate explorers dedicated to making your travel dreams a reality, 
-    Excursion Egypt, Sharm El Sheikh tours, cairo Sightseeing Tours, Sharm el Sheikh trips to Cairo, Sharm tour to Luxor, 
-    Excursions in hurghada, luxor Sightseeing Tours, fishing trips in sharm, desert safari, book day trips in sharm, 
-    shore excursions from el ain el sokhna port, shore excursion from safaga port, Travel Knowledgeable guides. " />
+<!-- Charset & Viewport -->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- description -->
-    <meta name="description" content="  Media Brand and DM Company is distinguished by providing all tourism services
-     to those wishing to travel around the world with high professionalism, including hotels, tours, restaurants, and transportation... " />
-    <meta name="og:site_name" content="Media Brand" />
-    <meta name="og:url" content="#" />
-    <meta name="og:title" content="Media Brand" />
-    <meta property="og:url" content="Media Brand" />
-    <meta property="og:site_name" content="Media Brand" />
-    <meta property="og:locale" content="ar-MA" />
-    <meta property="og:image" content="img/logo.png"/>
-    <meta property="og:image:width" content="800" />
-    <meta property="og:image:height" content="800" />
-    <meta property="og:image:type" content="image/png" />
-    <meta property="og:image:alt" content="MediaBrand Logo" />
+<?php if ($lang == 'en') : ?>
+<!-- English Meta Tags -->
+<meta property="og:title" content="Media Tech - Innovative Digital & Tech Solutions" />
+<meta name="description" content="Media Tech offers integrated digital solutions including software development, digital marketing, branding, and hosting services for modern businesses." />
+<meta name="keywords" content="Media Tech, software development, mobile apps, digital marketing, branding, cloud hosting, tech consulting, UI/UX design, IT services" />
+<?php else : ?>
+<!-- Arabic Meta Tags -->
+<meta property="og:title" content="شركة ميديا تك - حلول رقمية وتقنية مبتكرة" />
+<meta name="description" content="شركة ميديا تك تقدم حلولاً رقمية متكاملة تشمل البرمجة، التسويق الرقمي، تصميم المواقع، الهويات البصرية، والاستضافة السحابية باحترافية." />
+<meta name="keywords" content="ميديا تك, شركة تقنية, حلول رقمية, تصميم مواقع, برمجة تطبيقات, تسويق إلكتروني, استضافة مواقع, تصميم هوية بصرية, خدمات تقنية" />
+<?php endif; ?>
+
+<!-- Structured Data (JSON-LD) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "شركة ميديا تك",
+  "url": "https://mediatech.com",
+  "logo": "https://mediatech.com/logo.png",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "القاهرة",
+    "addressRegion": "مصر",
+    "addressCountry": "EG"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+201234567890",
+    "contactType": "customer service"
+  }
+}
+</script>
+
+<!-- General Meta -->
+<meta name="description" content="شركة ميديا تك - رائدة في تقديم خدمات تكنولوجيا المعلومات والتسويق الرقمي والتصميم الإبداعي." />
+<meta name="keywords" content="Media Tech, شركة ميديا تك, برمجة, تصميم, تسويق رقمي, تطوير, هوية بصرية, استضافة, حلول تقنية" />
+<meta name="og:site_name" content="Media Tech" />
+<meta name="og:url" content="https://mediatech.com/" />
+<meta name="og:title" content="Media Tech" />
+<meta property="og:url" content="https://www.mediatech.com" />
+<meta property="og:site_name" content="Media Tech" />
+<meta property="og:locale" content="ar-EG" />
+<meta property="og:image" content="assets/mediatech-logo.png" />
+<meta property="og:image:width" content="800" />
+<meta property="og:image:height" content="800" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:alt" content="Media Tech Logo" />
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+
+<!-- Language & Flags -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155343796-1"></script>
+<script>
+(function() {
+  "use strict";
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', "UA-155343796-1");
+})();
+</script>
+
 
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
@@ -81,8 +133,8 @@
     <!-- Navbar & Carousel Start -->
     <div class="container-fluid position-relative p-0">
         <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
-            <a href="indexar.html" class="navbar-brand p-0">
-                <h1 class="m-0"><i class="fa fa-user-tie me-2"></i> ميديـا برانــد </h1>
+            <a href="indexar.html" class="navbar-Tech p-0">
+                <h1 class="m-0"><i class="fa fa-user-tie me-2"></i> ميديـا تــك </h1>
             </a>
             <button class="navbar-toggler" type="button" 
             data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -108,10 +160,10 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
                  <a href="indexar.html" class="nav-item nav-link active"> الرئيسية</a>
-                    <a href="servicear.html" class="nav-item nav-link">خدماتنا</a>
-                    <a href="pagear.html" class="nav-item nav-link">الصفحات</a>
-                    <a href="contactar.html" class="nav-item nav-link">تواصل معنا</a>
-                    <a href="aboutar.html" class="nav-item nav-link">حــول</a>
+                    <a href="#" class="nav-item nav-link">خدماتنا</a>
+                    <a href="#" class="nav-item nav-link">الصفحات</a>
+                    <a href="#" class="nav-item nav-link">تواصل معنا</a>
+                    <a href="#" class="nav-item nav-link">حــول</a>
                     <a href="login/indexar.html" class="nav-item nav-link">حسابي</a>                    
                     <a href="index.html" class="nav-item nav-link">EN</a>
                     <a href="#" class="nav-item nav-link"></a>
@@ -120,6 +172,9 @@
                </a>             
             </div>
         </nav>
+<!-- Header End -->
+
+
 
 
 
@@ -134,7 +189,7 @@
                             <h5 class="text-white text-uppercase mb-3 animated slideInDown"> إبداع و إبتكـار</h5>
                             <h1 class="display-1 text-white mb-md-4 animated zoomIn">حلول رقمية إبداعية ومبتكرة </h1>
                             <a href="pagear.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">  عـــروض  </a>
-                            <a href="contactar.html" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight"> تـواصــل </a>
+                            <a href="https://api.whatsapp.com/send?phone=+201507553070&amp;text=Hello" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight"> تـواصــل </a>
                             
                         </div>
                     </div>
@@ -198,7 +253,7 @@
                         </div>
                         <div class="ps-4">
                             <h2 class="text-white mb-0"> عمـلاء سعـداء</h2>
-                            <h1 class="text-white mb-0" data-toggle="counter-up">450</h1>
+                            <h1 class="text-white mb-0" data-toggle="counter-up">50</h1>
                             <h5 class="text-white mb-0"> عدد العملاء</h5>
                         </div>
                     </div>
@@ -210,7 +265,7 @@
                         </div>
                         <div class="ps-4">
                             <h2 class="text-primary mb-0"> المشاريع المكتملة</h2>
-                            <h1 class="mb-0" data-toggle="counter-up">400</h1>
+                            <h1 class="mb-0" data-toggle="counter-up">40</h1>
                             <h5 class="text-primary mb-0"> عدد المشاريع</h5>
                             
                         </div>
@@ -223,7 +278,7 @@
                         </div>
                         <div class="ps-4">
                             <h2 class="text-white mb-0">ربـح الجوائــز</h2>
-                            <h1 class="text-white mb-0" data-toggle="counter-up">345</h1>
+                            <h1 class="text-white mb-0" data-toggle="counter-up">35</h1>
                             <h5 class="text-white mb-0"> عدد الرابحون</h5>
                         </div>
                     </div>
@@ -236,13 +291,14 @@
 
 
     <!-- Serviece Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-            <div class="row g-5">
-                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
-                    <div class="services bg-light rounded overflow-hidden">
-                        <div class="services-img position-relative overflow-hidden">
-                            <img class="img-fluid w-100" src="img/services-1.jpg" alt="">
-                            <div class="services-social">
+<!-- Service Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" dir="rtl">
+    <div class="row g-5">
+        <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+            <div class="services bg-light rounded overflow-hidden">
+                <div class="services-img position-relative overflow-hidden">
+                    <img class="img-fluid w-100" src="img/services-1.jpg" alt="">
+                    <div class="services-social">
                             </div>
                         </div>
                         <div class="text-center py-4">
@@ -280,6 +336,52 @@
                         </div>
                     </div>
                 </div>
+
+
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                    <div class="services-item bg-light rounded overflow-hidden">
+                        <div class="services-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/services-7.jpg" alt="">
+                            <div class="services-social">
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                    <h3 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link" href="aiar.html"> إدارة المشاريع التقنية  </a></h3>                            
+                            <p class="text-uppercase m-0">   نقدم خدمات احترافية لإدارة المشاريع التقنية باحترافية، من التخطيط إلى التنفيذ، مع الالتزام بالجداول الزمنية وضمان الجودة والنتائج..  </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                    <div class="services-item bg-light rounded overflow-hidden">
+                        <div class="services-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/services-8.jpg" alt="">
+                            <div class="services-social">
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                    <h3 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link" href="aiar.html">  خدمات الاستضافة والدعم الفني  </a></h3>                            
+                            <p class="text-uppercase m-0"> استضافة آمنة وسريعة، ودعم فني على مدار الساعة لضمان استمرارية عمل موقعك بدون انقطاع مع حلول احترافية وسرعة في الاستجابة.  </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                    <div class="services-item bg-light rounded overflow-hidden">
+                        <div class="services-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/services-9.jpg" alt="">
+                            <div class="services-social">
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                    <h3 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link" href="aiar.html">  تصميم الهويات البصرية  </a></h3>                            
+                            <p class="text-uppercase m-0">  نساعدك على بناء هوية بصرية فريدة تعبر عن علامتك التجارية بوضوح واحترافية، تشمل الشعارات والألوان والخطوط وكل ما يتعلق بهوية مشروعك.  </p>
+                        </div>
+                    </div>
+                </div>
+
 
 
                 <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
@@ -332,17 +434,13 @@
     </div>
     <!-- Service End -->
 
-
-
-
-    <!-- Pricing Plan Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase"> خـطـط الـتـسـعـيـــر</h5>
-                <h1 class="mb-0"> نحـن نقـدم أسعــارًا تنـافسـيــة لعـمــلائـنــا </h1>
-            </div>
-    
+<!-- Pricing Plan Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" dir="rtl">
+    <div class="container py-5">
+        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+            <h5 class="fw-bold text-primary text-uppercase">خـطـط الـتـسـعـيـــر</h5>
+            <h1 class="mb-0">نحـن نقـدم أسعــارًا تنـافسـيــة لعـمــلائـنــا</h1>
+        </div>    
             <div class="row g-0">
                 <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
                     <div class="bg-light rounded">
@@ -421,12 +519,13 @@
 
 
 
-    <!-- Team Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h1 class="fw-bold text-primary text-uppercase">فـريــق العـمـــل</h1>
-            </div>
+<!-- Team Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" dir="rtl">
+    <div class="container py-5">
+        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+            <h1 class="fw-bold text-primary text-uppercase">فـريــق العـمـــل</h1>
+        </div>
+
             <div class="row g-5">
                 <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
                     <div class="team-item bg-light rounded overflow-hidden">
@@ -485,12 +584,13 @@
     <!-- Team End -->
 
 
-    <!-- Blog Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h1 class="fw-bold text-primary text-uppercase"> أحــدث المـقـالات</h1>
-            </div>
+<!-- Blog Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" dir="rtl">
+    <div class="container py-5">
+        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+            <h1 class="fw-bold text-primary text-uppercase">أحــدث المـقـالات</h1>
+        </div>
+
             <div class="row g-5">
                 <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
                     <div class="blog-item bg-light rounded overflow-hidden">
@@ -548,14 +648,15 @@
     </div>
     <!-- Blog Start -->
     
-        <!-- Quote Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-7">
-                    <div class="section-title position-relative pb-3 mb-5">
-                        <h1 class="fw-bold text-primary text-uppercase"> طلب عرض أسعار</h1>
-                    </div>
+
+<!-- Quote Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" dir="rtl">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-7">
+                <div class="section-title position-relative pb-3 mb-5">
+                    <h1 class="fw-bold text-primary text-uppercase">طلب عرض أسعار</h1>
+                </div>
                     <div class="row gx-3">
                         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
                             <h5 class="mb-4"><i class="fa fa-reply text-primary me-3"></i>رد خلال 24ساعه </h5>
@@ -576,7 +677,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="mb-2"> لمزيد من الإستفسارات </h5>
-                            <h4 class="text-primary mb-0">+201113903070</h4>
+                            <h4 class="text-primary mb-0">+201507553070</h4>
                         </div>
                     </div>
                 </div>
@@ -614,25 +715,44 @@
     <!-- Quote End -->
 
 
-    <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container">
-            <div class="row gx-5">
-                <div class="col-lg-4 col-md-6 footer-about">
-                    <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
-                        <a href="index.html" class="navbar-brand">
-                            <h1 class="m-0 text-white"><i class="fa fa-user-tie me-2"></i> ميـديـا بـرانـد</h1>
-                        </a>
-                        <p class="mt-3 mb-4"> ارسل مقترحاتك</p>
-                        <form action="">
-                            <div class="input-group">
-                                <input type="text" class="form-control border-white p-3" placeholder="Your Email">
-                                <button class="btn btn-dark"> تسجيل</button>
-                            </div>
-                        </form>
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="row gx-5">
+            <!-- About & Social -->
+            <div class="col-lg-4 col-md-6 footer-about">
+                <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
+                    
+                    <!-- Logo -->
+                    <a href="index.html" class="navbar-Tech mb-3">
+                        <h1 class="m-0 text-white">
+                            <i class="fa fa-user-tie me-2"></i> ميـديـا تــك
+                        </h1>
+                    </a>
+
+                    <!-- Social Media Icons -->
+                    <div class="d-flex mb-3">
+                        <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                        <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                        <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram fw-normal"></i></a>
                     </div>
+
+                    <!-- Subscription Form -->
+                    <p class="mt-3 mb-2">ارسل مقترحاتك</p>
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" class="form-control border-white p-3" placeholder="بريدك الإلكتروني">
+                            <button class="btn btn-dark">تسجيل</button>
+                        </div>
+                    </form>
+
                 </div>
-                <div class="col-lg-8 col-md-6">
+            </div>
+            <!-- /About & Social -->
+
+
+            <div class="col-lg-8 col-md-6">
                     <div class="row gx-5">
                         <div class="col-lg-4 col-md-12 pt-5 mb-5">
                             <div class="section-title section-title-sm position-relative pb-3 mb-4">
@@ -640,15 +760,15 @@
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-geo-alt text-primary me-2"></i>
-                                <p class="mb-0"> القاهــرة، مصـر</p>
+                                <p class="mb-0"> مدينة 6 أكتوبر – مصر </p>
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-envelope-open text-primary me-2"></i>
-                                <p class="mb-0">moh222salah</p>
+                                <p class="mb-0">contact@medtecsol.com</p>
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-telephone text-primary me-2"></i>
-                                <p class="mb-0">+201113903070</p>
+                                <p class="mb-0">+201507553070</p>
                             </div>
                         </div>
 
@@ -662,18 +782,6 @@
                                 <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>الصفحات</a>
                             </div>
                         </div>
-
-                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
-                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-light mb-0">لـينكـات عــامــــــــة</h3>
-                            </div>
-                            <div class="d-flex mt-4">
-                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                                <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram fw-normal"></i></a>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -684,11 +792,8 @@
             <div class="row justify-content-end">
                 <div class="col-lg-8 col-md-6">
                     <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
-                        <p class="mb-0">&copy; <a class="text-white border-bottom" href="index.html"> ميـديـا بـرانـد</a>. كـل الحـقـوق محـفـوظــة. 
-						
-						<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-						تطوير بواسطة <a class="text-white border-bottom" href="https://moh222salah.github.io/cv/"> مـحـمــد صـــلاح</a></p>
-                    </div>
+                        <p class="mb-0">&copy; <a class="text-white border-bottom" href="index.html"> ميـديـا تــك</a>. كـل الحـقـوق محـفـوظــة. 
+						  </div>
                 </div>
             </div>
         </div>
@@ -696,24 +801,97 @@
     <!-- Footer End -->
 
 
+
+<!-- Bottom Navigation (Mobile Only) -->
+
+
+<!-- Bottom Navigation (Mobile Only) -->
+<style>
+  .mobile-bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    z-index: 9999;
+    box-shadow: 0 -1px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .mobile-bottom-nav a {
+    flex: 1;
+    padding: 8px 0;
+    font-size: 13px;
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mobile-bottom-nav a i {
+    font-size: 18px;
+    margin-bottom: 3px;
+  }
+
+  .mobile-bottom-nav a:hover {
+    color: #007bff;
+  }
+
+  .color-phone {
+    color: #25D366 !important;
+  }
+</style>
+
+<div class="mobile-bottom-nav d-flex d-md-none justify-content-around text-center">
+  <a href="index.php">
+    <i class="fa-solid fa-house"></i>
+    <span>Home</span>
+  </a>
+
+  <a href="servicesar.html">
+    <i class="fa-solid fa-concierge-bell"></i>
+    <span>خدماتنا</span>
+  </a>
+
+  <a href="pagear.html">
+    <i class="fa-solid fa-file-lines"></i>
+    <span>الصفحات</span>
+  </a>
+
+  <a href="https://wa.me/201507553070">
+    <i class="fa-brands fa-whatsapp color-phone"></i>
+    <span> واتســاب </span>
+  </a>
+</div>
+
+
+<!-- end -->
+
+
+
     <!-- Whatsapp Start -->
  
-        <div id="simple-chat-button--container"> <a id="simple-chat-button--button" href="https://api.whatsapp.com/send?phone=+201113903070&amp;text=Hello" target="_blank" rel="nofollow" aria-label="WhatsApp Chat Button"></a> <span id="simple-chat-button--text"></span> </div>
+        <div id="simple-chat-button--container"> <a id="simple-chat-button--button" href= "https://api.whatsapp.com/send?phone=+201507553070&amp;text=Hello" target="_blank" rel="nofollow" aria-label="WhatsApp Chat Button"></a> <span id="simple-chat-button--text"></span> </div>
  
        <style>
-        #simple-chat-button--container {            position: fixed;            bottom: 20px;            right: 20px;            z-index: 999999999;        }
-        #simple-chat-button--button {   display: block;            position: relative;            text-decoration: none;            width: 60px;            height: 60px;            border-radius: 50%;            -webkit-transition: all 0.2s ease-in-out;            transition: all 0.2s ease-in-out;            -webkit-transform: scale(1);            transform: scale(1);            box-shadow: 0 6px 8px 2px rgba(0, 0, 0, .15);
+
+        #simple-chat-button--container { position: fixed;          bottom: 20px;            right: 20px;            z-index: 999999999;        }
+        #simple-chat-button--button {   display: block;            position: relative;       text-decoration: none;      width: 60px;            height: 60px;            border-radius: 50%;            -webkit-transition: all 0.2s ease-in-out;            transition: all 0.2s ease-in-out;            -webkit-transform: scale(1);            transform: scale(1);            box-shadow: 0 6px 8px 2px rgba(201, 48, 48, 0.15);
         background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjU2IiB3aWR0aD0iMjU2IiB2aWV3Qm94PSItMjMgLTIxIDY4MiA2ODIuNjY3IiBmaWxsPSIjZmZmIiB4bWxuczp2PSJodHRwczovL3ZlY3RhLmlvL25hbm8iPjxwYXRoIGQ9Ik01NDQuMzg3IDkzLjAwOEM0ODQuNTEyIDMzLjA2MyA0MDQuODgzLjAzNSAzMjAuMDUxIDAgMTQ1LjI0NiAwIDIuOTggMTQyLjI2MiAyLjkxIDMxNy4xMTNjLS4wMjMgNTUuODk1IDE0LjU3OCAxMTAuNDU3IDQyLjMzMiAxNTguNTUxTC4yNSA2NDBsMTY4LjEyMS00NC4xMDJjNDYuMzI0IDI1LjI3IDk4LjQ3NyAzOC41ODYgMTUxLjU1MSAzOC42MDJoLjEzM2MxNzQuNzg1IDAgMzE3LjA2Ni0xNDIuMjczIDMxNy4xMzMtMzE3LjEzMy4wMzUtODQuNzQyLTMyLjkyMi0xNjQuNDE4LTkyLjgwMS0yMjQuMzU5ek0zMjAuMDUxIDU4MC45NDFoLS4xMDljLTQ3LjI5Ny0uMDItOTMuNjg0LTEyLjczLTEzNC4xNi0zNi43NDJsLTkuNjIxLTUuNzE1LTk5Ljc2NiAyNi4xNzIgMjYuNjI5LTk3LjI3LTYuMjctOS45NzNjLTI2LjM4Ny00MS45NjktNDAuMzItOTAuNDc3LTQwLjI5Ny0xNDAuMjgxLjA1NS0xNDUuMzMyIDExOC4zMDUtMjYzLjU3IDI2My42OTktMjYzLjU3IDcwLjQwNi4wMjMgMTM2LjU5IDI3LjQ3NyAxODYuMzU1IDc3LjMwMXM3Ny4xNTYgMTE2LjA1MSA3Ny4xMzMgMTg2LjQ4NGMtLjA2MiAxNDUuMzQ0LTExOC4zMDUgMjYzLjU5NC0yNjMuNTk0IDI2My41OTR6bTE0NC41ODYtMTk3LjQxOGMtNy45MjItMy45NjktNDYuODgzLTIzLjEzMy01NC4xNDgtMjUuNzgxLTcuMjU4LTIuNjQ1LTEyLjU0Ny0zLjk2MS0xNy44MjQgMy45NjktNS4yODUgNy45My0yMC40NjkgMjUuNzgxLTI1LjA5NCAzMS4wNjZzLTkuMjQyIDUuOTUzLTE3LjE2OCAxLjk4NC0zMy40NTctMTIuMzM2LTYzLjcyNy0zOS4zMzJjLTIzLjU1NS0yMS4wMTItMzkuNDU3LTQ2Ljk2MS00NC4wODItNTQuODkxLTQuNjE3LTcuOTM3LS4wMzktMTEuODEyIDMuNDc3LTE2LjE3MiA4LjU3OC0xMC42NTIgMTcuMTY4LTIxLjgyIDE5LjgwOS0yNy4xMDVzMS4zMi05LjkxOC0uNjY0LTEzLjg4M2MtMS45NzctMy45NjUtMTcuODI0LTQyLjk2OS0yNC40MjYtNTguODQtNi40MzctMTUuNDQ1LTEyLjk2NS0xMy4zNTktMTcuODMyLTEzLjYwMi00LjYxNy0uMjMtOS45MDItLjI3Ny0xNS4xODctLjI3N3MtMTMuODY3IDEuOTgtMjEuMTMzIDkuOTE4LTI3LjczIDI3LjEwMi0yNy43MyA2Ni4xMDUgMjguMzk1IDc2LjY4NCAzMi4zNTUgODEuOTczIDU1Ljg3OSA4NS4zMjggMTM1LjM2NyAxMTkuNjQ4YzE4LjkwNiA4LjE3MiAzMy42NjQgMTMuMDQzIDQ1LjE3NiAxNi42OTUgMTguOTg0IDYuMDMxIDM2LjI1NCA1LjE4IDQ5LjkxIDMuMTQxIDE1LjIyNy0yLjI3NyA0Ni44NzktMTkuMTcyIDUzLjQ4OC0zNy42OCA2LjYwMi0xOC41MTIgNi42MDItMzQuMzc1IDQuNjE3LTM3LjY4NC0xLjk3Ny0zLjMwNS03LjI2Mi01LjI4NS0xNS4xODQtOS4yNTR6bTAgMCIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+") center/44px 44px no-repeat #25D366;        }
         #simple-chat-button--text {            display: none;            position: absolute;            width: max-content;            background-color: #fff;            bottom: 15px;            right: 70px;            border-radius: 5px;            padding: 5px 10px;            color: #000;            font-size: 13px;            font-weight: 700;            letter-spacing: -0.03em;            -webkit-user-select: none;            -moz-user-select: none;            -ms-user-select: none;            user-select: none;            word-break: keep-all;            line-height: 1em;            text-overflow: ellipsis;            vertical-align: middle;            box-shadow: 0 6px 8px 2px rgba(0, 0, 0, .15);        }
         #simple-chat-button--button:before {           content: "";           position: absolute;     top: 0;            bottom: 0;            left: 0;            right: 0;            border-radius: 50%;        -webkit-animation: scb-shockwave-animation 2s 5.3s ease-out infinite;            animation: scb-shockwave-animation 2s 5.3s ease-out infinite;            z-index: -1;        }
         #simple-chat-button--button:hover {            -webkit-transform: scale(1.06);            transform: scale(1.06);            -webkit-transition: all 0.2s ease-in-out;            transition: all 0.2s ease-in-out;        }        @media only screen and (max-width: 1024px) {
         #simple-chat-button--container {                bottom: 20px;            }        }        @media only screen and (max-width: 768px) {
-        #simple-chat-button--container {                bottom: 20px;            }        }        @-webkit-keyframes scb-shockwave-animation {            0% {                -webkit-transform: scale(1);                transform: scale(1);                box-shadow: 0 0 2px rgba(0, 100, 0, .5), inset 0 0 1px rgba(0, 100, 0, .5);            }            95% {                box-shadow: 0 0 50px transparent, inset 0 0 30px transparent;            }            100% {                -webkit-transform: scale(1.2);                transform: scale(1.2);            }        }        @keyframes scb-shockwave-animation {            0% {                -webkit-transform: scale(1);                transform: scale(1);                box-shadow: 0 0 2px rgba(0, 100, 0, .5), inset 0 0 1px rgba(0, 100, 0, .5);            }            95% {                box-shadow: 0 0 50px transparent, inset 0 0 30px transparent;            }            100% {                -webkit-transform: scale(1.2);      transform: scale(1.2);            }       }
+        #simple-chat-button--container {                bottom: 20px;            }        }        @-webkit-keyframes scb-shockwave-animation {            0% {                -webkit-transform: scale(1);                transform: scale(1);                box-shadow: 0 0 2px rgba(91, 207, 207, 0.5), inset 0 0 1px rgba(0, 100, 0, .5);            }            95% {                box-shadow: 0 0 50px transparent, inset 0 0 30px transparent;            }            100% {                -webkit-transform: scale(1.2);                transform: scale(1.2);            }        }        @keyframes scb-shockwave-animation {            0% {                -webkit-transform: scale(1);                transform: scale(1);                box-shadow: 0 0 2px rgba(0, 100, 0, .5), inset 0 0 1px rgba(0, 100, 0, .5);            }            95% {                box-shadow: 0 0 50px transparent, inset 0 0 30px transparent;            }            100% {                -webkit-transform: scale(1.2);      transform: scale(1.2);            }       }
 
-          </style>
+        @media only screen and (max-width: 768px) {
+          #simple-chat-button--container {       display: none;    } }
+
+
+</style>
 
 <!-- Whatsapp End -->
-
 
 
 
