@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="Media Tech Co." />
+<meta name="csrf-token" content="uluVTGv93sLcssUm80hd0MpF5g9ILG23fVyrnBQ5" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Title -->
+<title>ميديا تك</title>
+
+<!-- OG Title -->
+<meta property="og:title" content="شركة ميديا تك - حلول تقنية متكاملة" />
+
+<?php
+$lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+?>
+
+<!-- Charset & Viewport -->
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<?php if ($lang == 'en') : ?>
+<!-- English Meta Tags -->
+<meta property="og:title" content="Media Tech - Innovative Digital & Tech Solutions" />
+<meta name="description" content="Media Tech offers integrated digital solutions including software development, digital marketing, branding, and hosting services for modern businesses." />
+<meta name="keywords" content="Media Tech, software development, mobile apps, digital marketing, branding, cloud hosting, tech consulting, UI/UX design, IT services" />
+<?php else : ?>
+<!-- Arabic Meta Tags -->
+<meta property="og:title" content="شركة ميديا تك - حلول رقمية وتقنية مبتكرة" />
+<meta name="description" content="شركة ميديا تك تقدم حلولاً رقمية متكاملة تشمل البرمجة، التسويق الرقمي، تصميم المواقع، الهويات البصرية، والاستضافة السحابية باحترافية." />
+<meta name="keywords" content="ميديا تك, شركة تقنية, حلول رقمية, تصميم مواقع, برمجة تطبيقات, تسويق إلكتروني, استضافة مواقع, تصميم هوية بصرية, خدمات تقنية" />
+<?php endif; ?>
+
+<!-- Structured Data (JSON-LD) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "شركة ميديا تك",
+  "url": "https://mediatech.com",
+  "logo": "https://mediatech.com/logo.png",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "القاهرة",
+    "addressRegion": "مصر",
+    "addressCountry": "EG"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+201234567890",
+    "contactType": "customer service"
+  }
+}
+</script>
+
+<!-- General Meta -->
+<meta name="description" content="شركة ميديا تك - رائدة في تقديم خدمات تكنولوجيا المعلومات والتسويق الرقمي والتصميم الإبداعي." />
+<meta name="keywords" content="Media Tech, شركة ميديا تك, برمجة, تصميم, تسويق رقمي, تطوير, هوية بصرية, استضافة, حلول تقنية" />
+<meta name="og:site_name" content="Media Tech" />
+<meta name="og:url" content="https://mediatech.com/" />
+<meta name="og:title" content="Media Tech" />
+<meta property="og:url" content="https://www.mediatech.com" />
+<meta property="og:site_name" content="Media Tech" />
+<meta property="og:locale" content="ar-EG" />
+<meta property="og:image" content="assets/mediatech-logo.png" />
+<meta property="og:image:width" content="800" />
+<meta property="og:image:height" content="800" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:image:alt" content="Media Tech Logo" />
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+
+<!-- Language & Flags -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css">
+
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-155343796-1"></script>
+<script>
+(function() {
+  "use strict";
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
+  gtag('config', "UA-155343796-1");
+})();
+</script>
+
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+
+    <!-- language-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icons.min.css">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar & Carousel Start -->
+    <div class="container-fluid position-relative p-0">
+        <nav class="navbar navbar-expand-lg navbar-dark px-5 py-3 py-lg-0">
+            <a href="index.html" class="navbar-Tech p-0">
+                <h1 class="m-0"><i class="fa fa-user-tie me-2"></i> ميديـا تــك </h1>
+            </a>
+            <button class="navbar-toggler" type="button" 
+            data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="fa fa-bars"></span>
+            </button>
+
+                    <a href="#" class="nav-item nav-link"></a>            
+                    <a href="#" class="nav-item nav-link"></a>
+                    <a href="#" class="nav-item nav-link"></a>
+                    <a href="#" class="nav-item nav-link"></a>
+                    <a href="#" class="nav-item nav-link"></a>
+                    <a href="#" class="nav-item nav-link"></a>
+                    <a href="#" class="nav-item nav-link"></a>
+                    <a href="#" class="nav-item nav-link"></a>
+                    <a href="#" class="nav-item nav-link"></a>
+                    <a href="#" class="nav-item nav-link"></a>
+                    <a href="#" class="nav-item nav-link"></a>
+                    <a href="#" class="nav-item nav-link"></a>
+                    <a href="#" class="nav-item nav-link"></a>
+
+
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                 <a href="index.html" class="nav-item nav-link active"> الرئيسية</a>
+                    <a href="#" class="nav-item nav-link">خدماتنا</a>
+                    <a href="#" class="nav-item nav-link">الصفحات</a>
+                    <a href="#" class="nav-item nav-link">تواصل معنا</a>
+                    <a href="#" class="nav-item nav-link">حــول</a>
+                    <a href="login/indexar.html" class="nav-item nav-link">حسابي</a>                    
+                    <a href="index-en.html" class="nav-item nav-link">EN</a>
+                    <a href="#" class="nav-item nav-link"></a>
+                </div>  
+                 <a ></a> 
+               </a>             
+            </div>
+        </nav>
+<!-- Header End -->
+
+
+
+
+
+<!-- slider -->
+
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/1.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown"> إبداع و إبتكـار</h5>
+                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">حلول رقمية إبداعية ومبتكرة </h1>
+                            <a href="pagear.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">  عـــروض  </a>
+                            <a href="https://api.whatsapp.com/send?phone=+201507553070&amp;text=Hello" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight"> تـواصــل </a>
+                            
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="carousel-item">
+                    <img class="w-100" src="img/1.jpg" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h5 class="text-white text-uppercase mb-3 animated slideInDown"> إبداع و إبتكـار</h5>
+                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">حلول رقمية إبداعية ومبتكرة </h1>
+                            <a href="pagear.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">  عـــروض  </a>
+                            <a href="contactar.html" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight"> تـواصــل</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Navbar & Carousel End -->
+
+
+    <!-- Full Screen Search Start -->
+    <div class="modal fade" id="searchModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <div class="input-group" style="max-width: 600px;">
+                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
+                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Full Screen Search End -->
+
+
+
+    <!-- Facts Start -->
+    <div class="container-fluid facts py-5 pt-lg-0">
+        <div class="container py-5 pt-lg-0">
+            <div class="row gx-0">
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
+                    <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
+                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
+                            <i class="fa fa-users text-primary"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h2 class="text-white mb-0"> عمـلاء سعـداء</h2>
+                            <h1 class="text-white mb-0" data-toggle="counter-up">50</h1>
+                            <h5 class="text-white mb-0"> عدد العملاء</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="bg-light shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
+                        <div class="bg-primary d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
+                            <i class="fa fa-check text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h2 class="text-primary mb-0"> المشاريع المكتملة</h2>
+                            <h1 class="mb-0" data-toggle="counter-up">40</h1>
+                            <h5 class="text-primary mb-0"> عدد المشاريع</h5>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
+                    <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
+                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
+                            <i class="fa fa-award text-primary"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h2 class="text-white mb-0">ربـح الجوائــز</h2>
+                            <h1 class="text-white mb-0" data-toggle="counter-up">35</h1>
+                            <h5 class="text-white mb-0"> عدد الرابحون</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts Start -->
+
+
+
+    <!-- Serviece Start -->
+<!-- Service Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" dir="rtl">
+    <div class="row g-5">
+        <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+            <div class="services bg-light rounded overflow-hidden">
+                <div class="services-img position-relative overflow-hidden">
+                    <img class="img-fluid w-100" src="img/services-1.jpg" alt="">
+                    <div class="services-social">
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                        <h2 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link" href="webar.html">  البرمـجـــة والتـطـويـــر  </a></h2>                            
+                        <p class="text-uppercase m-0"> رواد تطوير المواقع والمتاجر الالكترونية والتطبيقات الذكية ، مــــن خلال حلول برمجية وتصميمات إبداعية، نقدم خدماتنا لمساعدتكم على تطوير مشروعك والتفوق في مجالاتكم. </p>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                    <div class="services-item bg-light rounded overflow-hidden">
+                        <div class="services-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/services-2.jpg" alt="">
+                            <div class="services-social">
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                    <h3 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link" href="designar.html">  التـصـمـيــــم والجــرافـيـــك </a></h3>                            
+                            <p class="text-uppercase m-0"> التصميم الجرافيكي هو فن الاتصال البصري، حيث يهدف المصممون لخلق تصميمات جذابة وفعالة. يتم استخدام التصميم في العديد من المجالات مثل العلامات التجارية.  </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                    <div class="services-item bg-light rounded overflow-hidden">
+                        <div class="services-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/services-3.jpg" alt="">
+                            <div class="services-social">
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                        <h3 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link" href="marketingar.html">  التـسـويـــق الرقـمـــي </a></h3>                            
+                       <p class="text-uppercase m-0"> خدمات تسويق إلكتروني مصممة للشركات لزيادة العملاء وتنمية نشاطك بذكاء. من خلال رسم الخطوط العريضة للهوية الاعلانية لخدماتكم بناءا علي معايير فنية متنوعة لتطوير مشروعك </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                    <div class="services-item bg-light rounded overflow-hidden">
+                        <div class="services-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/services-7.jpg" alt="">
+                            <div class="services-social">
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                    <h3 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link" href="aiar.html"> إدارة المشاريع التقنية  </a></h3>                            
+                            <p class="text-uppercase m-0">   نقدم خدمات احترافية لإدارة المشاريع التقنية باحترافية، من التخطيط إلى التنفيذ، مع الالتزام بالجداول الزمنية وضمان الجودة والنتائج..  </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                    <div class="services-item bg-light rounded overflow-hidden">
+                        <div class="services-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/services-8.jpg" alt="">
+                            <div class="services-social">
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                    <h3 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link" href="aiar.html">  خدمات الاستضافة والدعم الفني  </a></h3>                            
+                            <p class="text-uppercase m-0"> استضافة آمنة وسريعة، ودعم فني على مدار الساعة لضمان استمرارية عمل موقعك بدون انقطاع مع حلول احترافية وسرعة في الاستجابة.  </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                    <div class="services-item bg-light rounded overflow-hidden">
+                        <div class="services-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/services-9.jpg" alt="">
+                            <div class="services-social">
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                    <h3 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link" href="aiar.html">  تصميم الهويات البصرية  </a></h3>                            
+                            <p class="text-uppercase m-0">  نساعدك على بناء هوية بصرية فريدة تعبر عن علامتك التجارية بوضوح واحترافية، تشمل الشعارات والألوان والخطوط وكل ما يتعلق بهوية مشروعك.  </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                    <div class="services-item bg-light rounded overflow-hidden">
+                        <div class="services-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/services-4.jpg" alt="">
+                            <div class="services-social">
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                    <h3 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link" href="aiar.html">  الذكــــاء الإصـطـنـاعـــي AI  </a></h3>                            
+                            <p class="text-uppercase m-0"> هو قدرة الآلات على التعلم وأداء المهام مثل البشر لتحقيق الأهداف بنجاح من خلال استيعاب كميات هائلة من بيانات التدريب. تعرف على كيفية استخدامه في الأعمال.  </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                    <div class="services-item bg-light rounded overflow-hidden">
+                        <div class="services-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/services-5.jpg" alt="">
+                            <div class="services-social">
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                    <h3 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link" href="seoar.html">  تحسين محركات البحث SEO  </a></h3>
+                            <p class="text-uppercase m-0"> تحسين محركات البحث هو عملية تحسين موقعك الإلكتروني لزيادة ترتيبه في نتائج محركات البحث مثل جوجل. تعرف معانا كيف تستطيع أن تصل بموقعك للظهور في أعلي نتائج البحث .   </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+                    <div class="services-item bg-light rounded overflow-hidden">
+                        <div class="services-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/services-6.jpg" alt="">
+                            <div class="services-social">
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                    <h3 class="text-secondary fw-medium"><a class="link-900 text-decoration-none stretched-link" href="paymentar.html">  خدمـات الـدفـع الإلكتـرونـي  </a></h3>                            
+                        <p class="text-uppercase m-0">  نوفر خدمات مميزة أضيفت حديثاً، خدمــات الدفـع الإلكترونــي، والتي تدعــم جميـع بطـاقـات الـدفـع الإلكـتـرونـي المحـليـة والـدوليــة : فيـزا و ماستر كـارد و بايبـال و بيتكـويـن. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+<!-- Pricing Plan Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" dir="rtl">
+    <div class="container py-5">
+        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+            <h5 class="fw-bold text-primary text-uppercase">خـطـط الـتـسـعـيـــر</h5>
+            <h1 class="mb-0">نحـن نقـدم أسعــارًا تنـافسـيــة لعـمــلائـنــا</h1>
+        </div>    
+            <div class="row g-0">
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                    <div class="bg-light rounded">
+                        <div class="border-bottom py-4 px-5 mb-4">
+                            <h2 class="text-primary mb-1"> الخـطـة الأساسـيــة </h2>
+                            <small class="text-uppercase"> للشركات الناشـئـة والأشـخـاص المبـتـدئـيـن </small>
+                        </div>
+    
+                        <div class="p-5 pt-0">
+                            <h1 class="display-5 mb-3">
+                            <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>199.00<small
+                            class="align-bottom" style="font-size: 16px; line-height: 40px;">/ الشهر </small>
+                            </h1>
+                            <div class="d-flex justify-content-between mb-3"><span> إنشاء موقع إلكتـرونـي </span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span> تصـاميــم إحـتـــرافـيــة   </span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span> تـســويــــق إلكـتـــرونــي </span><i class="fa fa-times text-danger pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span> دعــــم فــنــــي مـبــاشــر </span><i class="fa fa-times text-danger pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span> تحسـين محركـات البـحــث  </span><i class="fa fa-times text-danger pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span> تطـبـيــق أنـدرويــد / أيـفـــون </span><i class="fa fa-times text-danger pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span> تطـبيـقـات الذكـاء الإصطنـاعـي </span><i class="fa fa-times text-danger pt-1"></i></div>
+
+                            <a href="" class="btn btn-primary py-2 px-4 mt-4"> أطـــــــلـــــــــــــــــــــــــــــــــــب الآن </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                    <div class="bg-white rounded shadow position-relative" style="z-index: 1;">
+                        <div class="border-bottom py-4 px-5 mb-4">
+                            <h2 class="text-primary mb-1"> الخـطـة المتـقـدمــة</h2>
+                            <small class="text-uppercase"> للشـركـات الناجـحـة والأشـخـــاص الطـمـوحيـن </small>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <h1 class="display-5 mb-3">
+                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>499.00<small
+                            class="align-bottom" style="font-size: 16px; line-height: 40px;">/ الشهر </small>
+                            </h1>
+                            <div class="d-flex justify-content-between mb-3"><span> إنشاء موقع إلكتـرونـي </span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span> تصـاميــم إحـتـــرافـيــة   </span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span> تـســويــــق إلكـتـــرونــي </span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span> دعــــم فــنــــي مـبــاشــر </span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span> تحسـين محركـات البـحــث  </span><i class="fa fa-times text-danger pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span> تطـبـيــق أنـدرويــد / أيـفـــون </span><i class="fa fa-times text-danger pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span> تطـبيـقـات الذكـاء الإصطنـاعـي </span><i class="fa fa-times text-danger pt-1"></i></div>
+
+                            <a href="" class="btn btn-primary py-2 px-4 mt-4"> أطـــــــلـــــــــــــــــــــــــــــــــــب الآن </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+                    <div class="bg-light rounded">
+                        <div class="border-bottom py-4 px-5 mb-4">
+                            <h2 class="text-primary mb-1"> الخـطــة الإحـتـرافـيــة</h2>
+                            <small class="text-uppercase"> للشــركــات الكبيـرة والأشـخـاص المحترفيــن</small>
+                        </div>
+                        <div class="p-5 pt-0">
+                            <h1 class="display-5 mb-3">
+                                <small class="align-top" style="font-size: 22px; line-height: 45px;">$</small>999.00<small
+                            class="align-bottom" style="font-size: 16px; line-height: 40px;">/ الشهر </small>
+                            </h1>
+                            <div class="d-flex justify-content-between mb-3"><span> إنشاء موقع إلكتـرونـي </span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span> تصـاميــم إحـتـــرافـيــة   </span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-3"><span> تـســويــــق إلكـتـــرونــي </span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span> دعــــم فــنــــي مـبــاشــر </span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span> تحسـين محركـات البـحــث  </span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span> تطـبـيــق أنـدرويــد / أيـفـــون </span><i class="fa fa-check text-primary pt-1"></i></div>
+                            <div class="d-flex justify-content-between mb-2"><span> تطـبيـقـات الذكـاء الإصطنـاعـي </span><i class="fa fa-check text-primary pt-1"></i></div>
+
+                            <a href="" class="btn btn-primary py-2 px-4 mt-4"> أطـــــــلـــــــــــــــــــــــــــــــــــب الآن </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pricing Plan End -->
+
+
+
+<!-- Team Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" dir="rtl">
+    <div class="container py-5">
+        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+            <h1 class="fw-bold text-primary text-uppercase">فـريــق العـمـــل</h1>
+        </div>
+
+            <div class="row g-5">
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                    <div class="team-item bg-light rounded overflow-hidden">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/team-1.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-instagram fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h2 class="text-primary">م. محمـد صـــلاح</h2>
+                            <p class="text-uppercase m-0">مدير قسم البرمجة والتطوير</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                    <div class="team-item bg-light rounded overflow-hidden">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/team-2.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-instagram fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h2 class="text-primary"> م. فريـــال جـمـعـــة </h2>
+                            <p class="text-uppercase m-0">مديرة قسم التصميم والجرافيك</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+                    <div class="team-item bg-light rounded overflow-hidden">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid w-100" src="img/team-3.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-twitter fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-instagram fw-normal"></i></a>
+                                <a class="btn btn-lg btn-primary btn-lg-square rounded" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
+                            </div>
+                        </div>
+                        <div class="text-center py-4">
+                            <h4 class="text-primary"> أ. يـحـيــي أحمـــد</h4>
+                            <p class="text-uppercase m-0">مدير قسم التسويق </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+
+
+<!-- Blog Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" dir="rtl">
+    <div class="container py-5">
+        <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
+            <h1 class="fw-bold text-primary text-uppercase">أحــدث المـقـالات</h1>
+        </div>
+
+            <div class="row g-5">
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.3s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/blog-1.jpg" alt="">
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href=""> التطويــر </a>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex mb-3">
+                                <small class="me-3"><i class="far fa-user text-primary me-2"> محمـد صـــلاح </i></small>
+                                <small><i class="far fa-calendar-alt text-primary me-2"></i>  01 مايو, 2025</small>
+                            </div>
+                            <h4 class="mb-3"> كيفية تطوير مشروع رقمي</h4>
+                            <p>  الجميع متحمسون في البداية... لكن الجميع يمرون بفترات من الإحباط. الفرق الحقيقي ليس في الشغف، بل في العمل حتى لو لم أكن متحمسًا. </p>
+                            <a class="text-uppercase" href=""> إقرأ المزيـد <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.6s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/blog-2.jpg" alt="">
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href=""> تصميم</a>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex mb-3">
+                                <small class="me-3"><i class="far fa-user text-primary me-2"> فريال جـمـعـة</i></small>
+                                <small><i class="far fa-calendar-alt text-primary me-2"></i>  01 اكتوبر, 2025</small>
+                            </div>
+                            <h4 class="mb-3">كيفية تصميم مشروع رقمي</h4>
+                            <p>  الجميع متحمسون في البداية... لكن الجميع يمرون بفترات من الإحباط. الفرق الحقيقي ليس في الشغف، بل في العمل حتى لو لم أكن متحمسًا. </p>
+                            <a class="text-uppercase" href=""> إقرأ المزيـد <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 wow slideInUp" data-wow-delay="0.9s">
+                    <div class="blog-item bg-light rounded overflow-hidden">
+                        <div class="blog-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/blog-3.jpg" alt="">
+                            <a class="position-absolute top-0 start-0 bg-primary text-white rounded-end mt-5 py-2 px-4" href="">تسـويــق</a>
+                        </div>
+                        <div class="p-4">
+                            <div class="d-flex mb-3">
+                                <small class="me-3"><i class="far fa-user text-primary me-2"> يـحـيـي أحمــد </i></small>
+                                <small><i class="far fa-calendar-alt text-primary me-2"></i>  01 نوفمبر, 2025</small>
+                            </div>
+                            <h4 class="mb-3">كيفية تسويق مشروع رقمي</h4>
+                            <p>  الجميع متحمسون في البداية... لكن الجميع يمرون بفترات من الإحباط. الفرق الحقيقي ليس في الشغف، بل في العمل حتى لو لم أكن متحمسًا. </p>
+                            <a class="text-uppercase" href=""> إقرأ المزيـد <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog Start -->
+    
+
+<!-- Quote Start -->
+<div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" dir="rtl">
+    <div class="container py-5">
+        <div class="row g-5">
+            <div class="col-lg-7">
+                <div class="section-title position-relative pb-3 mb-5">
+                    <h1 class="fw-bold text-primary text-uppercase">طلب عرض أسعار</h1>
+                </div>
+                    <div class="row gx-3">
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
+                            <h5 class="mb-4"><i class="fa fa-reply text-primary me-3"></i>رد خلال 24ساعه </h5>
+                        </div>
+                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
+                            <h5 class="mb-4"><i class="fa fa-phone-alt text-primary me-3"></i> دعم فني 24 / 7 </h5>
+                        </div>
+                    </div>
+                    <p class="mb-4"> من أهم المهارات التي أحرص دائمًا على اكتسابها وتطويرها من حين لآخر هي العمل 
+                        حتى عندما لا أكون متحمسًا. أعود أقوى وأحقق نتائج مبهرة،
+                         حتى عندما لا أكون في أفضل حالاتي. الجميع متحمس في البداية...
+                         لكن الجميع يمرون بفترات من الإحباط. الفرق الحقيقي ليس في الشغف...
+                         الفرق يكمن في الإرادة الصلبة للمثابرة. من يعرف كيف يعمل وهو متحمس هو أمر طبيعي.
+                         من يعرف كيف يعمل حتى عندما لا يكون في أفضل حالاته هو شخص محترف. </p>
+                    <div class="d-flex align-items-center mt-2 wow zoomIn" data-wow-delay="0.6s">
+                        <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
+                            <i class="fa fa-phone-alt text-white"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h5 class="mb-2"> لمزيد من الإستفسارات </h5>
+                            <h4 class="text-primary mb-0">+201507553070</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="bg-primary rounded h-100 d-flex align-items-center p-5 wow zoomIn" data-wow-delay="0.9s">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-xl-12">
+                                    <input type="text" class="form-control bg-light border-0" placeholder=" إسـمــــك" style="height: 55px;">
+                                </div>
+                                <div class="col-12">
+                                    <input type="email" class="form-control bg-light border-0" placeholder=" الإيـمـيـــل" style="height: 55px;">
+                                </div>
+                                <div class="col-12">
+                                    <select class="form-select bg-light border-0" style="height: 55px;">
+                                        <option selected> إخـتــار الخـدمـــة</option>
+                                        <option value="1">التـطـويـــر </option>
+                                        <option value="2"> التصمـيــم </option>
+                                        <option value="3">التـسـويـق</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control bg-light border-0" rows="3" placeholder="رســالـــة"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="btn btn-dark w-100 py-3" type="submit">طلب عـرض أسعـار</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quote End -->
+
+
+<!-- Footer Start -->
+<div class="container-fluid bg-dark text-light mt-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="row gx-5">
+            <!-- About & Social -->
+            <div class="col-lg-4 col-md-6 footer-about">
+                <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary p-4">
+                    
+                    <!-- Logo -->
+                    <a href="index.html" class="navbar-Tech mb-3">
+                        <h1 class="m-0 text-white">
+                            <i class="fa fa-user-tie me-2"></i> ميـديـا تــك
+                        </h1>
+                    </a>
+
+                    <!-- Social Media Icons -->
+                    <div class="d-flex mb-3">
+                        <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                        <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                        <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
+                        <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                    </div>
+
+                    <!-- Subscription Form -->
+                    <p class="mt-3 mb-2">ارسل مقترحاتك</p>
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" class="form-control border-white p-3" placeholder="بريدك الإلكتروني">
+                            <button class="btn btn-dark">تسجيل</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+            <!-- /About & Social -->
+
+
+            <div class="col-lg-8 col-md-6">
+                    <div class="row gx-5">
+                        <div class="col-lg-4 col-md-12 pt-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0"> التـفــاصـيــــــل</h3>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-geo-alt text-primary me-2"></i>
+                                <p class="mb-0"> مدينة 6 أكتوبر – مصر </p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-envelope-open text-primary me-2"></i>
+                                <p class="mb-0">contact@medtecsol.com</p>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <i class="bi bi-telephone text-primary me-2"></i>
+                                <p class="mb-0">+201507553070</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
+                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                                <h3 class="text-light mb-0">لـينكـات سـريـعـة</h3>
+                            </div>
+                            <div class="link-animated d-flex flex-column justify-content-start">
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>الرئيسية</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>الخدمات</a>
+                                <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>الصفحات</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-white" style="background: #000000;">
+        <div class="container text-center">
+            <div class="row justify-content-end">
+                <div class="col-lg-8 col-md-6">
+                    <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
+                        <p class="mb-0">&copy; <a class="text-white border-bottom" href="index.html"> ميـديـا تــك</a>. كـل الحـقـوق محـفـوظــة. 
+						  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+
+
+<!-- Bottom Navigation (Mobile Only) -->
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+<!-- Bottom Navigation -->
+<style>
+  .mobile-bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #ffffff;
+    border-top: 1px solid #e0e0e0;
+    z-index: 1000;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+  }
+
+  .mobile-bottom-nav a {
+    flex: 1;
+    padding: 10px 0 6px;
+    font-size: 12px;
+    color: #444;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+
+  .mobile-bottom-nav a i {
+    font-size: 20px;
+    margin-bottom: 4px;
+  }
+
+  .mobile-bottom-nav a.active,
+  .mobile-bottom-nav a:hover,
+  .mobile-bottom-nav a:focus {
+    color: #007bff;
+  }
+
+  .mobile-bottom-nav .icon-home {
+    color: #007bff;
+  }
+
+  .mobile-bottom-nav .icon-services {
+    color: #ff5722;
+  }
+
+  .mobile-bottom-nav .icon-pages {
+    color: #9c27b0;
+  }
+
+  .mobile-bottom-nav .icon-whatsapp {
+    color: #25D366;
+  }
+
+  @media (min-width: 768px) {
+    .mobile-bottom-nav {
+      display: none !important;
+    }
+  }
+</style>
+
+<!-- Bottom Navigation HTML -->
+<div class="mobile-bottom-nav d-flex justify-content-around text-center d-md-none">
+  <a href="index.php" class="active">
+    <i class="fa-solid fa-house icon-home"></i>
+    <span>الرئيسية</span>
+  </a>
+
+  <a href="servicesar.html">
+    <i class="fa-solid fa-cogs icon-services"></i>
+    <span>خدماتنا</span>
+  </a>
+
+  <a href="pagear.html">
+    <i class="fa-solid fa-file-lines icon-pages"></i>
+    <span>الصفحات</span>
+  </a>
+
+  <a href="https://wa.me/201507553070" target="_blank">
+    <i class="fa-brands fa-whatsapp icon-whatsapp"></i>
+    <span>واتساب</span>
+  </a>
+</div>
+
+<!-- end -->
+
+<!-- Font Awesome CDN -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+
+
+    <!-- Whatsapp Start -->
+ 
+        <div id="simple-chat-button--container"> <a id="simple-chat-button--button" href= "https://api.whatsapp.com/send?phone=+201507553070&amp;text=Hello" target="_blank" rel="nofollow" aria-label="WhatsApp Chat Button"></a> <span id="simple-chat-button--text"></span> </div>
+ 
+       <style>
+
+        #simple-chat-button--container { position: fixed;          bottom: 20px;            right: 20px;            z-index: 999999999;        }
+        #simple-chat-button--button {   display: block;            position: relative;       text-decoration: none;      width: 60px;            height: 60px;            border-radius: 50%;            -webkit-transition: all 0.2s ease-in-out;            transition: all 0.2s ease-in-out;            -webkit-transform: scale(1);            transform: scale(1);            box-shadow: 0 6px 8px 2px rgba(201, 48, 48, 0.15);
+        background: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjU2IiB3aWR0aD0iMjU2IiB2aWV3Qm94PSItMjMgLTIxIDY4MiA2ODIuNjY3IiBmaWxsPSIjZmZmIiB4bWxuczp2PSJodHRwczovL3ZlY3RhLmlvL25hbm8iPjxwYXRoIGQ9Ik01NDQuMzg3IDkzLjAwOEM0ODQuNTEyIDMzLjA2MyA0MDQuODgzLjAzNSAzMjAuMDUxIDAgMTQ1LjI0NiAwIDIuOTggMTQyLjI2MiAyLjkxIDMxNy4xMTNjLS4wMjMgNTUuODk1IDE0LjU3OCAxMTAuNDU3IDQyLjMzMiAxNTguNTUxTC4yNSA2NDBsMTY4LjEyMS00NC4xMDJjNDYuMzI0IDI1LjI3IDk4LjQ3NyAzOC41ODYgMTUxLjU1MSAzOC42MDJoLjEzM2MxNzQuNzg1IDAgMzE3LjA2Ni0xNDIuMjczIDMxNy4xMzMtMzE3LjEzMy4wMzUtODQuNzQyLTMyLjkyMi0xNjQuNDE4LTkyLjgwMS0yMjQuMzU5ek0zMjAuMDUxIDU4MC45NDFoLS4xMDljLTQ3LjI5Ny0uMDItOTMuNjg0LTEyLjczLTEzNC4xNi0zNi43NDJsLTkuNjIxLTUuNzE1LTk5Ljc2NiAyNi4xNzIgMjYuNjI5LTk3LjI3LTYuMjctOS45NzNjLTI2LjM4Ny00MS45NjktNDAuMzItOTAuNDc3LTQwLjI5Ny0xNDAuMjgxLjA1NS0xNDUuMzMyIDExOC4zMDUtMjYzLjU3IDI2My42OTktMjYzLjU3IDcwLjQwNi4wMjMgMTM2LjU5IDI3LjQ3NyAxODYuMzU1IDc3LjMwMXM3Ny4xNTYgMTE2LjA1MSA3Ny4xMzMgMTg2LjQ4NGMtLjA2MiAxNDUuMzQ0LTExOC4zMDUgMjYzLjU5NC0yNjMuNTk0IDI2My41OTR6bTE0NC41ODYtMTk3LjQxOGMtNy45MjItMy45NjktNDYuODgzLTIzLjEzMy01NC4xNDgtMjUuNzgxLTcuMjU4LTIuNjQ1LTEyLjU0Ny0zLjk2MS0xNy44MjQgMy45NjktNS4yODUgNy45My0yMC40NjkgMjUuNzgxLTI1LjA5NCAzMS4wNjZzLTkuMjQyIDUuOTUzLTE3LjE2OCAxLjk4NC0zMy40NTctMTIuMzM2LTYzLjcyNy0zOS4zMzJjLTIzLjU1NS0yMS4wMTItMzkuNDU3LTQ2Ljk2MS00NC4wODItNTQuODkxLTQuNjE3LTcuOTM3LS4wMzktMTEuODEyIDMuNDc3LTE2LjE3MiA4LjU3OC0xMC42NTIgMTcuMTY4LTIxLjgyIDE5LjgwOS0yNy4xMDVzMS4zMi05LjkxOC0uNjY0LTEzLjg4M2MtMS45NzctMy45NjUtMTcuODI0LTQyLjk2OS0yNC40MjYtNTguODQtNi40MzctMTUuNDQ1LTEyLjk2NS0xMy4zNTktMTcuODMyLTEzLjYwMi00LjYxNy0uMjMtOS45MDItLjI3Ny0xNS4xODctLjI3N3MtMTMuODY3IDEuOTgtMjEuMTMzIDkuOTE4LTI3LjczIDI3LjEwMi0yNy43MyA2Ni4xMDUgMjguMzk1IDc2LjY4NCAzMi4zNTUgODEuOTczIDU1Ljg3OSA4NS4zMjggMTM1LjM2NyAxMTkuNjQ4YzE4LjkwNiA4LjE3MiAzMy42NjQgMTMuMDQzIDQ1LjE3NiAxNi42OTUgMTguOTg0IDYuMDMxIDM2LjI1NCA1LjE4IDQ5LjkxIDMuMTQxIDE1LjIyNy0yLjI3NyA0Ni44NzktMTkuMTcyIDUzLjQ4OC0zNy42OCA2LjYwMi0xOC41MTIgNi42MDItMzQuMzc1IDQuNjE3LTM3LjY4NC0xLjk3Ny0zLjMwNS03LjI2Mi01LjI4NS0xNS4xODQtOS4yNTR6bTAgMCIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+") center/44px 44px no-repeat #25D366;        }
+        #simple-chat-button--text {            display: none;            position: absolute;            width: max-content;            background-color: #fff;            bottom: 15px;            right: 70px;            border-radius: 5px;            padding: 5px 10px;            color: #000;            font-size: 13px;            font-weight: 700;            letter-spacing: -0.03em;            -webkit-user-select: none;            -moz-user-select: none;            -ms-user-select: none;            user-select: none;            word-break: keep-all;            line-height: 1em;            text-overflow: ellipsis;            vertical-align: middle;            box-shadow: 0 6px 8px 2px rgba(0, 0, 0, .15);        }
+        #simple-chat-button--button:before {           content: "";           position: absolute;     top: 0;            bottom: 0;            left: 0;            right: 0;            border-radius: 50%;        -webkit-animation: scb-shockwave-animation 2s 5.3s ease-out infinite;            animation: scb-shockwave-animation 2s 5.3s ease-out infinite;            z-index: -1;        }
+        #simple-chat-button--button:hover {            -webkit-transform: scale(1.06);            transform: scale(1.06);            -webkit-transition: all 0.2s ease-in-out;            transition: all 0.2s ease-in-out;        }        @media only screen and (max-width: 1024px) {
+        #simple-chat-button--container {                bottom: 20px;            }        }        @media only screen and (max-width: 768px) {
+        #simple-chat-button--container {                bottom: 20px;            }        }        @-webkit-keyframes scb-shockwave-animation {            0% {                -webkit-transform: scale(1);                transform: scale(1);                box-shadow: 0 0 2px rgba(91, 207, 207, 0.5), inset 0 0 1px rgba(0, 100, 0, .5);            }            95% {                box-shadow: 0 0 50px transparent, inset 0 0 30px transparent;            }            100% {                -webkit-transform: scale(1.2);                transform: scale(1.2);            }        }        @keyframes scb-shockwave-animation {            0% {                -webkit-transform: scale(1);                transform: scale(1);                box-shadow: 0 0 2px rgba(0, 100, 0, .5), inset 0 0 1px rgba(0, 100, 0, .5);            }            95% {                box-shadow: 0 0 50px transparent, inset 0 0 30px transparent;            }            100% {                -webkit-transform: scale(1.2);      transform: scale(1.2);            }       }
+
+        @media only screen and (max-width: 768px) {
+          #simple-chat-button--container {       display: none;    } }
+
+
+</style>
+
+<!-- Whatsapp End -->
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
